@@ -6,7 +6,7 @@ import userModel from "../models/user.model.js";
 const stripe = new Stripe(process.env.STRIPE_SECRET_KEY);
 
 const placeOrder = async (req, res) => {
-  const frontendUrl = "http://localhost:5173";
+  const frontendUrl = "https://eventplanner-frontend.onrender.com";
   const userId = req.body.userId;
 
   const ticketNumber = Math.floor(Math.random() * 99999);
