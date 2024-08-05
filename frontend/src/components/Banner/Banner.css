@@ -1,0 +1,77 @@
+.banner{
+    background: #a1a6be1f;
+    color: rgba(0, 0, 0, 0.724);
+    height: 70vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.banner-text{
+    width: 70%;
+}
+.banner-text span{
+    background: hsla(211, 96%, 62%, 1);
+
+    background: linear-gradient(45deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+    
+    background: -moz-linear-gradient(45deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+    
+    background: -webkit-linear-gradient(45deg, hsla(211, 96%, 62%, 1) 0%, hsla(295, 94%, 76%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#439CFB", endColorstr="#F187FB", GradientType=1 );
+    /* color: white; */
+    -webkit-background-clip: text;
+-webkit-text-fill-color: transparent;
+}
+.para{
+    text-align: center;
+    font-size: 0.8rem;
+    color: rgba(67, 61, 61, 0.562);
+}
+.banner-text h1{
+    font-size: 3rem;
+    text-align: center;
+}
+
+.banner-button{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.banner-button button{
+    padding: 15px 15px;
+    border: none;
+    border-radius: 40px;
+    color: white;
+    cursor: pointer;
+}
+
+.banner-button button:nth-child(1){
+    background: rgb(0, 125, 214);
+}
+
+.banner-button button:nth-child(2){
+    background: rgb(219, 4, 108);
+}
+
+@media screen and (max-width:700px){
+    .banner-text h1{
+        font-size: 2rem;
+        text-align: start;
+    }
+    .para{
+        width: 70%;
+        text-align: start;
+    }
+
+    .banner-button{
+        width: 70%;
+        justify-content: start;
+    }
+}

@@ -1,0 +1,14 @@
+.list{
+    display: grid;
+    gap: 20px;
+    padding: 20px;
+}
+.list-table{
+    display: grid;
+    gap: 20px;
+}
+.list-table-format{
+    display: grid;
+    grid-template-columns: 2fr 1fr 1fr 1fr;
+    gap: 20px;
+}

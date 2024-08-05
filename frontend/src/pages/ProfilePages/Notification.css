@@ -1,0 +1,197 @@
+.notification-container {
+  background: #7b747426;
+  padding: 15px;
+  width: 70%;
+  display: grid;
+  gap: 12px;
+  /* overflow-y: scroll; */
+}
+.notification {
+  background: white;
+  padding: 25px;
+  border-radius: 12px;
+  position: relative;
+}
+.notification-info {
+  display: flex;
+  align-items: center;
+  gap: 22px;
+}
+.user-profile-icon2 {
+  background: hsla(339, 100%, 55%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(339, 100%, 55%, 1) 0%,
+    hsla(197, 100%, 64%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(339, 100%, 55%, 1) 0%,
+    hsla(197, 100%, 64%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(339, 100%, 55%, 1) 0%,
+    hsla(197, 100%, 64%, 1) 100%
+  );
+
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#ff1b6b", endColorstr="#45caff", GradientType=1 );
+  border-radius: 50px;
+  width: 3.5rem;
+  position: relative;
+  text-align: center;
+  height: 3.5rem;
+  color: white;
+  font-weight: 700;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.user-info {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+.users-email {
+  font-size: 1.2rem;
+  font-weight: 600;
+}
+.message {
+  color: gray;
+  font-size: 0.9rem;
+}
+.time-ago{
+  position: absolute;
+  /* top: 0; */
+  right: 0;
+  bottom: -7px;
+  padding: 15px;
+  color: gray;
+  font-size: 500;
+  font-weight: 500;
+}
+.see-btn {
+  padding: 9px;
+  width: 15%;
+  /* border-color: gray; */
+  outline: none;
+  /* border: none; */
+  cursor: pointer;
+  background: white;
+  font-weight: 500;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+.btn-container {
+  display: flex;
+  gap: 20px;
+}
+.btn-container > button {
+  padding: 9px;
+  width: 15%;
+  /* border-color: gray; */
+  outline: none;
+  /* border: none; */
+  cursor: pointer;
+  background: white;
+  font-weight: 500;
+  border: 1px solid gray;
+  border-radius: 6px;
+}
+.btn-container > button:nth-child(1) {
+  background: hsla(192, 80%, 51%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(192, 80%, 51%, 1) 0%,
+    hsla(355, 85%, 63%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(192, 80%, 51%, 1) 0%,
+    hsla(355, 85%, 63%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(192, 80%, 51%, 1) 0%,
+    hsla(355, 85%, 63%, 1) 100%
+  );
+  cursor: pointer;
+  color: white;
+  border: none;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#1DBDE6", endColorstr="#F1515E", GradientType=1 );
+}
+.btn-container > button:nth-child(2) {
+  background: hsla(136, 82%, 72%, 1);
+
+  background: linear-gradient(
+    45deg,
+    hsla(136, 82%, 72%, 1) 0%,
+    hsla(205, 84%, 36%, 1) 100%
+  );
+
+  background: -moz-linear-gradient(
+    45deg,
+    hsla(136, 82%, 72%, 1) 0%,
+    hsla(205, 84%, 36%, 1) 100%
+  );
+
+  background: -webkit-linear-gradient(
+    45deg,
+    hsla(136, 82%, 72%, 1) 0%,
+    hsla(205, 84%, 36%, 1) 100%
+  );
+  border: none;
+  cursor: pointer;
+  color: white;
+  filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#7EF29D", endColorstr="#0F68A9", GradientType=1 );
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+
+@media screen and (max-width:1064px){
+    .user-profile-icon2{
+        width:6.5rem;
+    }
+    .see-btn{
+        width: 25%;
+    }
+}
+
+@media screen and (max-width:850px){
+    .user-profile-icon2{
+        width: 8.5rem;
+    }
+    .notification-container{
+        width: 80%;
+    }
+}
+
+@media screen and (max-width:650px){
+    .notification-container{
+        width: 100%;
+    }
+    .btn-container>button{
+        width: 26%;
+    }
+}
+
+@media screen and (max-width:475px){
+    .user-profile-icon2{
+        width: 10.5rem;
+    }
+    .see-btn{
+        width: 50%;
+    }
+}

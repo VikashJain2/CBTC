@@ -1,0 +1,17 @@
+.footer-container{
+    padding-top: 2rem;
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 15px;
+    justify-content: center;
+}
+.footer-container>p{
+    color: gray;
+    font-weight: 600;
+}
+.footer{
+    margin-top: 4rem;
+    background: #a1a6be1f;
+}

@@ -1,0 +1,89 @@
+.login{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100vw;
+}
+
+.login-card{
+    display: grid;
+    width: max(25vw, 400px);
+    gap: 30px;
+    color: gray;
+    padding: 20px 50px;
+    /* width: 100%; */
+    /* width: 25%; */
+    border: none;
+    box-sizing: 1px 1px 10px bl;
+    box-shadow: 0px 0px 10px rgba(70, 68, 68, 0.253);
+}
+
+.login-card h2{
+    color:rgba(10, 7, 76, 0.76);
+    font-size: 1.5rem;
+}
+.login-card i{
+    color:rgba(10, 7, 76, 0.76);
+    font-size: 1.5rem;
+    transition: all 0.3s;
+}
+
+.login-card i:hover{
+    transform: translateX(-10px);
+}
+.login-card-header{
+    display: flex;
+    align-items: center;
+    gap: 12px;
+}
+
+.login-fields{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.login-fields input{
+    padding: 10px 25px;
+    border-color: rgba(35, 33, 33, 0.76);;
+    border: 1px solid;
+    border-radius: 10px;
+    /* outline: none; */
+    outline-color: rgba(70, 68, 68, 0.253);
+}
+.login-fields input::placeholder{
+    text-align: start;
+}
+.login-btn button{
+    width: 100%;
+    text-align: center;
+    padding: 10px 25px;
+    border: none;
+    border-radius: 10px;
+    background: rgba(10, 7, 76, 0.822);
+    color: white;
+    font-size: 1rem;
+    transition: all 0.3s;
+    cursor: pointer;
+}
+
+.login-btn button:hover{
+    background:rgba(10, 7, 76, 0.856);
+}
+
+.login-condition{
+    display: flex;
+    align-items: start;
+    gap: 8px;
+    margin-top: -15px;
+    color: gray;
+}
+.login-condition input{
+    margin-top: 5px;
+}
+
+.login-here span{
+    color: rgba(10, 7, 76, 0.76);
+    font-weight: 500;
+    cursor: pointer;
+}
