@@ -5,13 +5,14 @@ import { toast } from "react-toastify";
 export const eventContext = createContext(null);
 
 const EventContextProvider = (props) => {
-  const url = "https://eventplanner-backend.onrender.com";
+  const url = "http://localhost:3131";
   const [token, setToken] = useState("");
   const [email, setEmail] = useState("");
   const [events, setEvents] = useState([]);
   const [allEvents, setAllEvents] = useState([]);
   const [myTickets, setMyTickets] = useState([]);
   const [notification,setNotification] = useState([])
+  const [loading,setLoading] = useState(false)
   const fetchEvents = async (token) => {
     try {
       const response = await axios.post(
@@ -29,15 +30,19 @@ const EventContextProvider = (props) => {
     }
   };
   const fetchAllEvents = async () => {
+    setLoading(true)
     try {
+      
       const response = await axios.get(url + "/api/event/events", {});
       if (response.data.success) {
+        setLoading(false)
         setAllEvents(response.data.data);
       }
     } catch (error) {
       console.log(error);
       toast.error(response.data.message);
     }
+    
   };
 
   const fetchTickets = async (token) => {
@@ -91,6 +96,8 @@ const EventContextProvider = (props) => {
     setMyTickets,
     notification,
     setNotification,
+    loading,
+    setLoading
   };
 
   return (
