@@ -5,7 +5,7 @@ import { toast } from "react-toastify";
 export const eventContext = createContext(null);
 
 const EventContextProvider = (props) => {
-  const url = "http://localhost:3131";
+  const url = "https://eventplanner-backend.onrender.com";
   const [token, setToken] = useState("");
   const [email, setEmail] = useState("");
   const [events, setEvents] = useState([]);
